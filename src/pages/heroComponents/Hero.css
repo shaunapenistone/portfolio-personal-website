@@ -21,7 +21,8 @@
   font-family: 'Manrope';
   font-weight: normal;
   color: gray;
-  font-size: 6ch;
+  height: 0em;
+  font-size: 2rem;
 }
 
 .typing-container {
@@ -30,11 +31,27 @@
   height: 2em;
   padding-left: 0.4em;
   padding-right: 0.4em;
-  font-weight: normal;
+  color: white;
 }
 
 .avatar-image {
-  width: 200px;
-  height: 200px;
-  border-radius: 20ch
+  width: 250px;
+  height: 250px;
+  border-radius: 20ch;
+  box-shadow: 0px 0px 15px 7px #e3ffff;
+}
+
+.emphasis-text {
+  font-family: 'Manrope';
+  font-weight: normal;
+  color: white;
+  height: 0em;
+  padding-left: 0.4em;
+}
+
+.location-text-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }

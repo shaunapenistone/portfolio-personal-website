@@ -1,12 +1,12 @@
 .navbar {
   background: #ffffff;
   backdrop-filter: blur(5px);
-  opacity: 45%;
+  opacity: 75%;
   height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.2rem;
+  font-size: 1rem;
   position: sticky;
   top: 0;
   z-index: 999;
@@ -52,7 +52,7 @@
 }
 
 .nav-links {
-  color: #6078b1;
+  color: gray;
   display: flex;
   align-items: center;
   text-decoration: none;

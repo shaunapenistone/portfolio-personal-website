@@ -11,7 +11,7 @@ import {
 import LandingPage from './pages/LandingPage'
 
 const gradients = [
-  ['#C9FFFE', '#BAB9FF'], // blue -> purple
+  ['#BAB9FF', '#C9FFFE'], // blue -> purple
   ['#CEB9EC', '#FFA4F3'], // lilac -> pink
 ];
 
