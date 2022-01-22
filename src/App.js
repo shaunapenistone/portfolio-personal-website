@@ -4,15 +4,15 @@ import styled from 'styled-components';
 import Navbar from './components/Navbar';
 import {
   BrowserRouter,
-  Routes, // instead of "Switch"
+  Routes,
   Route,
 } from "react-router-dom";
 
 import LandingPage from './pages/LandingPage'
 
 const gradients = [
-  ['#CEB9EC', '#FFA4F3'], // lilac -> pink
   ['#C9FFFE', '#BAB9FF'], // blue -> purple
+  ['#CEB9EC', '#FFA4F3'], // lilac -> pink
 ];
 
 const View = styled.div`
@@ -30,12 +30,13 @@ function App() {
         angle="90deg"
       >    
         <BrowserRouter>
-        <View>
-          <Navbar />
-          <Routes>
-            <Route path="*" component={LandingPage} />
-          </Routes>
-        </View>
+          <View>
+            <Navbar />
+            <LandingPage />
+            <Routes>
+              <Route path="/"/>
+            </Routes>
+          </View>
         </BrowserRouter>
       </Gradient>  
   );

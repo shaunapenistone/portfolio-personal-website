@@ -1,0 +1,40 @@
+.sub-header-text {
+  display: flex;
+}
+
+.all-of-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.sub-header-text {
+  font-family: 'Manrope';
+  font-weight: normal;
+  color: gray;
+  height: 0em;
+}
+
+.title {
+  font-family: 'Manrope';
+  font-weight: normal;
+  color: gray;
+  font-size: 6ch;
+}
+
+.typing-container {
+  min-width: 2em;
+  align-self: center;
+  height: 2em;
+  padding-left: 0.4em;
+  padding-right: 0.4em;
+  font-weight: normal;
+}
+
+.avatar-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 20ch
+}
