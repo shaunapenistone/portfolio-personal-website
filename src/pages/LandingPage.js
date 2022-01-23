@@ -8,9 +8,15 @@ import Footer from '../components/Footer';
 function LandingPage() {
   return (
     <>
-      <Hero />
-      <PortfolioHero />
-      <ExperienceHero />
+      <div id='contact'>
+        <Hero />
+      </div>
+      <div id='portfolio'>
+        <PortfolioHero />
+      </div>
+      <div id='experience'>
+        <ExperienceHero />
+      </div>
       <Footer />
     </>
   )

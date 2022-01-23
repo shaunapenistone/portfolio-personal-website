@@ -32,9 +32,9 @@ function App() {
         <BrowserRouter>
           <View>
             <Navbar />
-            <LandingPage />
+            {/* <LandingPage /> */}
             <Routes>
-              <Route path="/"/>
+              <Route path="/" element={<LandingPage />}/>
             </Routes>
           </View>
         </BrowserRouter>

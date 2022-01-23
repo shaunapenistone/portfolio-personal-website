@@ -25,17 +25,17 @@ function Navbar() {
           </div>
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className='nav-item'>
-              <HashLink smooth to={"/"} className='nav-links' >
+              <HashLink smooth to={"/#portfolio"} className='nav-links' >
                 Portfolio
               </HashLink>
             </li>
             <li className='nav-item'>
-              <HashLink smooth to={"/"} className='nav-links' onClick={closeMobileMenu}>
+              <HashLink smooth to={"/#contact"} className='nav-links' onClick={closeMobileMenu}>
                 Contact Me
               </HashLink>
             </li>
             <li className='nav-item'>
-              <HashLink smooth to={"/"} className='nav-links' onClick={closeMobileMenu}>
+              <HashLink smooth to={"/#experience"} className='nav-links' onClick={closeMobileMenu}>
                 Experience
               </HashLink>
             </li>
