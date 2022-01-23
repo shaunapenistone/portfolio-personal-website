@@ -54,21 +54,24 @@ function PortfolioHero() {
         <PortfolioItem 
           title='Portfolio Website'
           languages='React, JavaScript, CSS, Github' 
-          popupDescription='Blah blah blah'
+          popupDescription='This project includes the following: React Hooks; React Router; Framer Motion; dynamic, reusable custom components; React Icons and GitHub. This website has been mobile optimised'
           pictureFilepath={PortfolioWebsite}
+          portfolioName='portfolio'
         />
         <PortfolioItem 
           title='Apstro App'
-          languages='React Native, JavaScript, Redux, REST Api, Firebase, 
+          languages='React Native, JavaScript, Redux, NPM, Expo, REST APIs, Firebase, 
           Firestore, CSS, Github' 
-          popupDescription='Blah blah blah'
+          popupDescription='To consolidate my React Native knowledge, I have created an Astrology powered social media app that is pending approval in the app store. This project contains the following digital features: user authenticiation using Firebase and Redux; a form that uses Redux to post user data to a RESTFUL API; NPM and Expo; Firebase and Firestore to store user images and data; custom reusable components; React Native Navigation; Async Storage; Image Picker and Firestore Security rules.'
           pictureFilepath={ApstroApp}
+          portfolioName='apstroApp'
         />
         <PortfolioItem 
           title='Apstro Website'
           languages='React, JavaScript, CSS, Github' 
-          popupDescription='Blah blah blah'
+          popupDescription='This project includes the following: React Hooks; React Router; Framer Motion; dynamic, reusable custom components; interactive planets; React Icons and GitHub. This website has been mobile and SEO optimised. '
           pictureFilepath={ApstroWebsite}
+          portfolioName='apstroWebsite'
         />
       </div>
     </View>

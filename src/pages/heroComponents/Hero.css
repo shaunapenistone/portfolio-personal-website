@@ -63,6 +63,11 @@
   margin: 10px;
   border-radius: 20ch;
   box-shadow: 0px 0px 7px 3px #e3ffff;
+  transition:transform 0.3s ease;
+}
+
+.social-logos:hover {
+  transform:scale(1.2);
 }
 
 .contact-icons {

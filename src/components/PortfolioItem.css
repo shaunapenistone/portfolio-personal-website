@@ -3,7 +3,7 @@
   align-items: center;
   flex-direction: column;
   background: white;
-  opacity: 90%;
+  opacity: 95%;
   width: 80%;
   height: 75%;
   border-radius: 10ch;
@@ -21,7 +21,7 @@
   font-family: 'Manrope';
   font-weight: normal;
   color: gray;
-  height: 0em;
+  height: auto;
   font-size: 2rem;
 }
 
@@ -30,14 +30,16 @@
   font-weight: normal;
   color: white;
   height: 0em;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 .popup-description {
   font-family: 'Manrope';
   font-weight: normal;
   color: gray;
-  height: 0em;
+  height: auto;
+  text-align: center;
+  width: 60%
 }
 
 .popup-button {
@@ -46,6 +48,11 @@
   margin: 40px;
   position: absolute;
   right: 0;
+  transition:transform 0.3s ease;
+}
+
+.popup-button:hover {
+  transform:scale(1.2);
 }
 
 .portfolio-group {
@@ -68,10 +75,11 @@
   font-weight: normal;
   color: white;
   height: 0em;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   width: 300px;
   text-align: center;
   height: fit-content;
+  margin-left: 20px;
 }
 
 .button {
@@ -83,6 +91,11 @@
   font-family: 'Manrope';
   font-weight: normal;
   color: white;
+  transition:transform 0.3s ease;
+}
+
+.button:hover {
+  transform:scale(1.2);
 }
 
 .button-container {
@@ -90,6 +103,36 @@
 }
 
 .image {
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
+}
+
+.popup-github-button {
+  padding: 0.5rem 2rem;
+  font-size: 1rem;
+  border: 0.5px solid gray;
+  border-radius: 20px;
+  background: transparent;
+  font-family: 'Manrope';
+  font-weight: normal;
+  color: gray;
+  height: fit-content;
+  margin-top: 20px
+}
+
+.carousel-image {
+  height: 180px;
+  opacity: 100%;
+  margin-left: 25px;
+  transition:transform 0.25s ease;
+  border-radius: 15px;
+}
+
+.carousel-image:hover {
+  transform:scale(2.5);
+}
+
+.screenshots {
+  display: flex;
+  flex-direction: row;
 }
