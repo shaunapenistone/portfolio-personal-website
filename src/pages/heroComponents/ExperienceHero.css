@@ -25,3 +25,12 @@
   font-size: 1rem;
   height: auto;
 }
+
+.title-experience {
+  font-family: 'Manrope';
+  font-weight: normal;
+  color: white;
+  font-size: 3rem;
+  height: auto;
+  margin-bottom: 35px;
+}
