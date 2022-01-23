@@ -1,0 +1,27 @@
+.vertical-timeline-element--work {
+
+}
+
+.vertical-timeline-element-title {
+  font-family: 'Manrope';
+  font-weight: normal;
+  color: white;
+  font-size: 2rem;
+  height: auto;
+}
+
+.vertical-timeline-element-subtitle {
+  font-family: 'Manrope';
+  font-weight: normal;
+  color: white;
+  font-size: 1.25rem;
+  height: auto;
+}
+
+.vertical-timeline-element-para {
+  font-family: 'Manrope';
+  font-weight: normal;
+  color: white;
+  font-size: 1rem;
+  height: auto;
+}

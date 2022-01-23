@@ -25,6 +25,14 @@
   font-size: 2rem;
 }
 
+.portfolio-title {
+  font-family: 'Manrope';
+  font-weight: normal;
+  color: white;
+  height: 0em;
+  font-size: 2rem;
+}
+
 .popup-description {
   font-family: 'Manrope';
   font-weight: normal;
@@ -53,7 +61,7 @@
 .languages {
   font-family: 'Manrope';
   font-weight: normal;
-  color: gray;
+  color: white;
   height: 0em;
   font-size: 1.2rem;
   width: 300px;
@@ -64,8 +72,7 @@
 .button {
   padding: 0.5rem 2rem;
   font-size: 1rem;
-  border: 2px solid #fff;
-  color: rgb(134, 134, 134);
+  border: 0.5px solid white;
   border-radius: 20px;
   background: transparent;
   font-family: 'Manrope';

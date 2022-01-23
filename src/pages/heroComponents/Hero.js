@@ -8,12 +8,11 @@ import Avatar from '../../assets/images/avatar.jpg'
 const View = styled.div`
   display: flex;
   width: 100%;
-  min-height: 85vh;
+  min-height: 95vh;
   height: 100%;
   display: flex; 
   align-items: center;
 `
-
 
 function Hero() {
   return (
