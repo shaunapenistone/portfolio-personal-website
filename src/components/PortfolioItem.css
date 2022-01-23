@@ -1,0 +1,49 @@
+.pop-up {
+  background: white;
+  opacity: 40%;
+  width: 80%;
+  height: 80%;
+  border-radius: 10ch;
+}
+
+.popup-title {
+  font-family: 'Manrope';
+  font-weight: normal;
+  color: gray;
+  height: 0em;
+  font-size: 2rem;
+}
+
+.popup-description {
+  font-family: 'Manrope';
+  font-weight: normal;
+  color: gray;
+  height: 0em;
+}
+
+.portfolio-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.languages {
+  font-family: 'Manrope';
+  font-weight: normal;
+  color: gray;
+  height: 0em;
+  font-size: 1.2rem;
+  width: 250px;
+  text-align: center;
+}
+
+/* .button {
+
+} */
+
+.image {
+  width: 300px;
+  height: 300px;
+}

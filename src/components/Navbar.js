@@ -39,6 +39,11 @@ function Navbar() {
                 Experience
               </HashLink>
             </li>
+            <li className='nav-item'>
+              <HashLink smooth to={"/"} className='nav-links' onClick={closeMobileMenu}>
+                My Skills
+              </HashLink>
+            </li>
           </ul>
         </div>
       </nav>
