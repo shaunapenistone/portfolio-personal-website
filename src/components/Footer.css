@@ -1,0 +1,37 @@
+.footer-container {
+  display: flex;
+  height: 95px;
+  background: #ffffff;
+  backdrop-filter: blur(5px);
+  opacity: 75%;
+  width: 100%;
+}
+
+.social-icons {
+  background: gray;
+  padding: 15px;
+  height: fit-content;
+  margin: 10px;
+  border-radius: 20ch;
+}
+
+.copyright {
+  font-family: 'Manrope';
+  font-weight: normal;
+  color: gray;
+  height: auto;
+  font-size: 1rem;
+  margin: auto;
+  margin-left: 30px;
+  width: 500px
+}
+
+.social-logo-container {
+  display: flex;
+  align-self: center;
+  justify-content: flex-end;
+  align-items: flex-start;
+  width: 100%;
+  margin-right: 15px;
+  left: 0;
+}

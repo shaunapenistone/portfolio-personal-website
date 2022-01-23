@@ -13,12 +13,11 @@ import PortfolioWebsite from '../../assets/images/portfolioWebsite.png';
 const View = styled.div`
   display: flex;
   width: 100%;
-  min-height: 100vh;
+  min-height: 120vh;
   height: 100%;
   display: flex; 
   align-items: center;
   flex-direction: column;
-  margin: auto
 `
 
 function PortfolioHero() {

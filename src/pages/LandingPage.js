@@ -2,8 +2,8 @@ import React from 'react';
 
 import Hero from './heroComponents/Hero';
 import PortfolioHero from './heroComponents/PortfolioHero';
-import ContactMeHero from './heroComponents/ContactMeHero';
 import ExperienceHero from './heroComponents/ExperienceHero';
+import Footer from '../components/Footer';
 
 function LandingPage() {
   return (
@@ -11,7 +11,7 @@ function LandingPage() {
       <Hero />
       <PortfolioHero />
       <ExperienceHero />
-      <ContactMeHero />
+      <Footer />
     </>
   )
 }

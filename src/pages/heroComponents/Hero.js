@@ -67,7 +67,7 @@ function Hero() {
                     'React Native',
                     3000,
                   ]}
-                  repeat={Infinity}
+                  repeat={2}
                 />
               </div>
               }

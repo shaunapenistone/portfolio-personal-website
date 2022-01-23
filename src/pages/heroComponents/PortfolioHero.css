@@ -10,3 +10,15 @@
   font-size: 3rem;
   height: auto;
 }
+
+@media screen and (max-width: 960px) {
+  .portfolio-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 150px;
+  }
+
+  .section-header {
+    font-size: 2.4rem
+  }
+}
