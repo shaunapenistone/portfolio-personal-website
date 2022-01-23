@@ -1,12 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import styled from 'styled-components';
+import { motion, useAnimation } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
 import { FaSchool } from 'react-icons/fa'
+import { MdWork } from 'react-icons/md'
 
 import './ExperienceHero.css'
-import SkillsHero from './SkillsHero';
 
 const View = styled.div`
   display: flex;
@@ -19,13 +21,36 @@ const View = styled.div`
   flex-direction: column;
 `
 
-// ['#BAB9FF', '#C9FFFE'], // blue -> purple
-// ['#CEB9EC', '#FFA4F3'], // lilac -> pink
-
 function ExperienceHero() {
+  const controls = useAnimation();
+  const { ref, inView } = useInView();
+
+  const fadeUp = {
+    hidden: { opacity: 0, y: 100},
+    visible: { opacity: 1, y: 0 }
+  }
+
+  useEffect(() => {
+    if (inView) {
+      controls.start('visible');
+    }
+    if (!inView) {
+      controls.start('hidden');
+    }
+  }, [controls, inView]);
+
   return (
     <View>
-      <h1 className='title-experience'>My Experience</h1>
+      <motion.h1 
+        className='title-experience'
+        ref={ref}
+        initial="hidden"
+        animate={controls}
+        variants={fadeUp}
+        transition={{ duration: 0.6 }}
+      >
+        My Experience
+      </motion.h1>
       <VerticalTimeline>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
@@ -56,7 +81,7 @@ function ExperienceHero() {
           contentArrowStyle={{ borderRight: '12px solid  #ADD8E6' }}
           date="2020 - present"
           iconStyle={{ background: 'white', color: '#ADD8E6' }}
-          icon={<FaSchool />}
+          icon={<MdWork />}
           animate={true}
         >
           <h3 className="vertical-timeline-element-title">Tech Recruiter</h3>
@@ -71,7 +96,7 @@ function ExperienceHero() {
           contentArrowStyle={{ borderRight: '12px solid  #CEB9EC' }}
           date="2018 - 2020"
           iconStyle={{ background: 'white', color: '#CEB9EC' }}
-          icon={<FaSchool />}
+          icon={<MdWork />}
           animate={true}
         >
           <h3 className="vertical-timeline-element-title">Recruitment Consultant</h3>

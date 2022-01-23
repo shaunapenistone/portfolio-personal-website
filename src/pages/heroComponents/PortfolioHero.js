@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styled from 'styled-components';
+import { motion, useAnimation } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
 import './PortfolioHero.css';
 
@@ -15,12 +17,40 @@ const View = styled.div`
   height: 100%;
   display: flex; 
   align-items: center;
-
+  flex-direction: column;
+  margin: auto
 `
 
 function PortfolioHero() {
+  const controls = useAnimation();
+  const { ref, inView } = useInView();
+
+  const fadeUp = {
+    hidden: { opacity: 0, y: 100},
+    visible: { opacity: 1, y: 0 }
+  }
+
+  useEffect(() => {
+    if (inView) {
+      controls.start('visible');
+    }
+    if (!inView) {
+      controls.start('hidden');
+    }
+  }, [controls, inView]);
+
   return (
     <View>
+      <motion.h1 
+        className='section-header'
+        ref={ref}
+        initial="hidden"
+        animate={controls}
+        variants={fadeUp}
+        transition={{ duration: 0.6 }}
+      >
+        My Personal Projects
+      </motion.h1>
       <div className='portfolio-container'>
         <PortfolioItem 
           title='Portfolio Website'

@@ -1,5 +1,12 @@
 .portfolio-container {
   display: flex;
-  margin: auto;
   flex-direction: row;
+}
+
+.section-header {
+  font-family: 'Manrope';
+  font-weight: normal;
+  color: white;
+  font-size: 3rem;
+  height: auto;
 }
