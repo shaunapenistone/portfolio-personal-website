@@ -5,7 +5,7 @@
   background: white;
   opacity: 95%;
   width: 80%;
-  height: 75%;
+  height: 80%;
   border-radius: 10ch;
   position: absolute;
   z-index: 10;
@@ -117,7 +117,8 @@
   font-weight: normal;
   color: gray;
   height: fit-content;
-  margin-top: 20px
+  margin-top: 20px;
+  margin-right: 20px;
 }
 
 .carousel-image {
@@ -126,6 +127,23 @@
   margin-left: 25px;
   transition:transform 0.25s ease;
   border-radius: 15px;
+}
+
+@media screen and (max-width: 960px) {
+  .carousel-image {
+    width: 100px;
+    height: 100%
+  }
+  .screenshots {
+    flex-direction: column;
+  }
+  .popup-description {
+    width: 90%;
+    font-size: 0.85rem
+  }
+  .popup-title {
+    font-size: 1.5rem;
+  }
 }
 
 .carousel-image:hover {

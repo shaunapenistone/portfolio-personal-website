@@ -35,7 +35,6 @@ const PortfolioItem = props => {
   }, [controls, inView]);
 
   let carouselImages = [];
-  let githubRepo = 'https://github.com/shaunapenistone'
 
   if (props.portfolioName === 'apstroApp') {
     carouselImages = [ApstroApp1, ApstroApp2, ApstroApp3]
@@ -57,14 +56,22 @@ const PortfolioItem = props => {
           <img src={carouselImages[1]} className='carousel-image' />
           <img src={carouselImages[2]} className='carousel-image' />
         </div>
-        {props.portfolioName !== 'apstroApp' && (
+        <div>
           <button 
             onClick={() => window.open('https://github.com/shaunapenistone', "_blank")} 
             className='popup-github-button'
           >
             Github Repo
           </button>
-        )}
+          {props.portfolioName === 'apstroWebsite' && (
+            <button 
+              onClick={() => window.open('http://apstro.co.uk/', "_blank")} 
+              className='popup-github-button'
+            >
+              Live Here
+            </button>
+          )}
+        </div>
         <p className='popup-description'>{props.popupDescription}</p>
       </div>)}
       <motion.div 
